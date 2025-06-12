@@ -12,7 +12,7 @@ The `extract` function consists of two arguments; first being the contents of th
 
 In your property value, if you set it as a string based selector, it will return the first matching element and its text contents by default - trimming the spaces for cleanness.
 
-```
+```ts
 import { extract, type Schema, type Element } from 'domson'
 
 // Your typed schema
@@ -46,8 +46,7 @@ const data = extract(contents, schema)
 
 Then having this example output:
 
-```
-// Output
+```json
 {
   "title": "Government appoints new Health Secretary",
   "description": "Breaking: government appoints John Appleseed as the new Health Secretary",
