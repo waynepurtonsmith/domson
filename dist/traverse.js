@@ -1,0 +1,2 @@
+var p=Object.defineProperty;var i=(t,r)=>p(t,"name",{value:r,configurable:!0});var l=i((t,r)=>{if(Array.isArray(r)){if(r.length!==2||typeof r[0]!="string"||typeof r[1]!="function")throw new Error("Invalid schema for array, expected structure: [selector, callback]");let[e,a]=r,n=t.find(e);return n.map(f=>l(n.eq(f),a(n.eq(f)))).get()}if(typeof r=="string")return t.find(r).first().text().trim();if(typeof r=="function")return r(t);let o={};for(let e in r)o[e]=l(t,r[e]);return o},"traverse");export{l as traverse};
+//# sourceMappingURL=traverse.js.map

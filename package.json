@@ -1,0 +1,46 @@
+{
+  "name": "domson",
+  "description": "A library that structures data into a JSON object from the DOM and querying text based elements to form its structure.",
+  "tags": [
+    "json",
+    "dom",
+    "data",
+    "html"
+  ],
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/waynepurtonsmith/domson",
+  "bugs": {
+    "url": "https://github.com/waynepurtonsmith/domson/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/waynepurtonsmith/domson.git"
+  },
+  "author": "Wayne Purton-Smith",
+  "scripts": {
+    "build": "yarn build:esbuild && yarn build:types",
+    "build:esbuild": "node ./build.mjs",
+    "build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
+    "test": "vitest --config ./test/vitest.config.ts"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "domhandler": "^5.0.3",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "packageManager": "yarn@4.9.2"
+}

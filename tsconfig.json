@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "nodenext",
+    "target": "es2020",
+    "module": "nodenext",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "sourceMap": true
+  },
+  "exclude": [
+    "dist",
+    "test"
+  ],
+  "include": [
+    "src"
+  ]
+}
